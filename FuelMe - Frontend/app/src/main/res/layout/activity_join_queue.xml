@@ -27,52 +27,52 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            app:cardBackgroundColor="@color/card_background"
+            app:cardBackgroundColor="#B6E8B9"
             app:cardCornerRadius="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_margin="10dp"
-                android:padding="10dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="10dp">
 
                 <TextView
                     android:id="@+id/txt_vehicleType"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/VehicleType"
                     android:layout_marginBottom="10dp"
+                    android:text="@string/VehicleType"
                     android:textSize="20sp" />
 
                 <Spinner
                     android:id="@+id/drpdwn_vehicleType"
                     android:layout_width="325dp"
                     android:layout_height="35dp"
+                    android:layout_gravity="center"
                     android:background="@drawable/input_field"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
-                    android:layout_gravity="center"
                     android:spinnerMode="dropdown" />
 
                 <TextView
                     android:id="@+id/txt_vehicleType2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/FuelType"
                     android:layout_marginTop="25dp"
                     android:layout_marginBottom="10dp"
+                    android:text="@string/FuelType"
                     android:textSize="20sp" />
 
                 <Spinner
                     android:id="@+id/drpdwn_fuelType"
                     android:layout_width="325dp"
                     android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
                     android:background="@drawable/input_field"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_gravity="center"
                     android:spinnerMode="dropdown" />
 
             </LinearLayout>
@@ -83,8 +83,10 @@
         android:id="@+id/btn_confirmJoin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#00897B"
         android:backgroundTint="@color/submit_button"
         android:text="@string/ConfirmJoin"
+        app:backgroundTint="#00897B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
