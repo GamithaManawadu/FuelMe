@@ -26,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            app:cardBackgroundColor="@color/card_background"
+            app:cardBackgroundColor="#B6C8A1"
             app:cardCornerRadius="10dp">
 
             <LinearLayout
@@ -137,9 +137,11 @@
                 android:id="@+id/btn_cancel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="#F44336"
                 android:backgroundTint="@color/cancel_button"
                 android:text="@string/cancel_text"
                 android:textSize="16sp"
+                app:backgroundTint="#F44336"
                 app:cornerRadius="5dp" />
 
             <Button
@@ -148,9 +150,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
                 android:layout_marginBottom="20dp"
+                android:background="#009688"
                 android:backgroundTint="@color/submit_button"
                 android:text="@string/update_btn"
                 android:textSize="16sp"
+                app:backgroundTint="#009688"
                 app:cornerRadius="5dp" />
 
         </LinearLayout>

@@ -30,7 +30,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
-                app:srcCompat="@drawable/user" />
+                app:srcCompat="@drawable/user1"
+                tools:srcCompat="@drawable/user1" />
         </androidx.cardview.widget.CardView>
 
         <RelativeLayout
@@ -96,9 +97,11 @@
         android:id="@+id/btn_logIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#00897B"
         android:backgroundTint="@color/submit_button"
         android:text="@string/LogIn"
         android:textSize="20sp"
+        app:backgroundTint="#00897B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

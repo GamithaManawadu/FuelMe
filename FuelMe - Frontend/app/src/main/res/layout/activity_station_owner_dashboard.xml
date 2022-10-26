@@ -27,7 +27,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
-                app:srcCompat="@drawable/fuel_station" />
+                app:srcCompat="@drawable/fuel_station"
+                tools:srcCompat="@drawable/fs" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -68,10 +69,10 @@
             android:id="@+id/txt_current_diesel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_dot"
             android:layout_margin="10dp"
-            android:textSize="18sp"
-            android:text="TextView" />
+            android:drawableLeft="@drawable/ic_dot"
+            android:text="TextView"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/txt_current_petrol"
@@ -227,9 +228,11 @@
         android:layout_width="250dp"
         android:layout_height="70dp"
         android:layout_margin="20dp"
+        android:background="#00897B"
         android:backgroundTint="@color/submit_button"
         android:drawableLeft="@drawable/ic_update"
         android:text="@string/btn_fuel_arrival"
+        app:backgroundTint="#00897B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"

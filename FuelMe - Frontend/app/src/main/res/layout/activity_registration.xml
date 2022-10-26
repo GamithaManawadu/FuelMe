@@ -30,7 +30,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
-                app:srcCompat="@drawable/user" />
+                app:srcCompat="@drawable/user1"
+                tools:srcCompat="@drawable/user1" />
         </androidx.cardview.widget.CardView>
 
         <RelativeLayout
@@ -51,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            app:cardBackgroundColor="@color/card_background"
+            app:cardBackgroundColor="@color/main_color2"
             app:cardCornerRadius="10dp">
 
             <LinearLayout
@@ -64,85 +65,85 @@
                     android:id="@+id/edtTxt_fname"
                     android:layout_width="325dp"
                     android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
                     android:background="@drawable/input_field"
                     android:ems="10"
                     android:hint="@string/FullName"
                     android:inputType="textPersonName"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_gravity="center"
                     android:textSize="20sp" />
 
                 <EditText
                     android:id="@+id/edtTxt_username"
                     android:layout_width="325dp"
                     android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
                     android:background="@drawable/input_field"
                     android:ems="10"
                     android:hint="@string/Username"
                     android:inputType="textPersonName"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="center"
                     android:textSize="20sp" />
 
                 <EditText
                     android:id="@+id/edtTxt_stationName"
                     android:layout_width="325dp"
                     android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
                     android:background="@drawable/input_field"
                     android:ems="10"
                     android:hint="@string/StationName"
                     android:inputType="textPersonName"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="center"
                     android:textSize="20sp" />
 
                 <EditText
                     android:id="@+id/edtTxt_location"
                     android:layout_width="325dp"
                     android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
                     android:background="@drawable/input_field"
                     android:ems="10"
                     android:hint="@string/Location"
                     android:inputType="textPersonName"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="center"
                     android:textSize="20sp" />
 
                 <EditText
                     android:id="@+id/edtTxt_password"
                     android:layout_width="325dp"
                     android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
                     android:background="@drawable/input_field"
                     android:ems="10"
                     android:hint="@string/Password"
                     android:inputType="textPassword"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="center"
                     android:textSize="20sp" />
 
                 <EditText
                     android:id="@+id/edtTxt_confirmPassword"
                     android:layout_width="325dp"
                     android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
                     android:background="@drawable/input_field"
                     android:ems="10"
                     android:hint="@string/ConfirmPassword"
                     android:inputType="textPassword"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="15dp"
                     android:textSize="20sp" />
 
             </LinearLayout>
@@ -155,6 +156,7 @@
         android:layout_height="wrap_content"
         android:text="@string/Register"
         android:textSize="18sp"
+        app:backgroundTint="#00897B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
