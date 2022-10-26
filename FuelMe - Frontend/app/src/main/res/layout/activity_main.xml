@@ -4,20 +4,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_color"
+    android:background="@color/input_color"
     tools:context=".MainActivity">
 
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="469dp"
+        android:layout_height="649dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.847"
+        app:srcCompat="@drawable/bg2" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="158dp"
+        android:layout_height="314dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01"
+        app:srcCompat="@drawable/b2" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="295dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="142dp"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="@string/Welcome"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="361dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="-46dp"
+        android:text="@string/wel1"
+        android:textAlignment="center"
+        android:textColor="#100F0F"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btn_started"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/get_started"
-        android:textSize="25sp"
+        android:textSize="20sp"
+        app:cornerRadius="@dimen/fab_margin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.765" />
+        app:layout_constraintVertical_bias="0.892" />
 </androidx.constraintlayout.widget.ConstraintLayout>

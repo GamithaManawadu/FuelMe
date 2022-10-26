@@ -13,10 +13,17 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.FuelQueManagementClient">
+        android:theme="@style/Theme.FuelMe">
         <activity
             android:name="com.example.FuelMe.WelcomeActivity"
-            android:exported="false" />
+            android:exported="true"
+            android:theme="@style/Theme.FuelMe.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="com.example.FuelMe.vehicle_owner.SelectionStation"
             android:exported="true" />
@@ -44,12 +51,12 @@
         <activity
             android:name="com.example.FuelMe.MainActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
