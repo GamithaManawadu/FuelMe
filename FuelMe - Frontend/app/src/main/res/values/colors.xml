@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="notification_bar_color">#2E3E57</color>
+    <color name="notification_bar_color_2">#4B4B5E</color>
+    <color name="main_color1">#425A7D</color>
+    <color name="main_color2">#A0C0D6</color>
+    <color name="input_color">#E5FAFC</color>
+    <color name="btn_color1">#DF7356</color>
+    <color name="fuel_available_color">#ff99cc00</color>
+    <color name="fuel_finish_color">#ffff4444</color>
+    <color name="app_bar">#746C84</color>
+    <color name="submit_button">#7C7B9B</color>
+    <color name="cancel_button">#E7CC96</color>
+    <color name="card_background">#B8B8BB</color>
+    <color name="background_color">#EBE7E7</color>
+    <color name="green">#97C40D</color>
+</resources>
