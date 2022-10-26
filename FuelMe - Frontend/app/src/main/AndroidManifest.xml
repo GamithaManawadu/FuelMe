@@ -46,8 +46,9 @@
             android:name="com.example.FuelMe.vehicle_owner.VehicleOwnerDashboard"
             android:exported="true" />
         <activity
-            android:name="com.example.FuelMe.station_owner.StationOwnerDashboard"
-            android:exported="true" />
+            android:name="com.example.FuelMe.station_owner.FuelStationOwnerDashboard"
+            android:exported="true"
+            />
         <activity
             android:name="com.example.FuelMe.MainActivity"
             android:exported="true">

@@ -4,70 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_color"
+    android:background="@drawable/bg"
     tools:context=".Registration">
 
     <LinearLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card_view"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="4dp"
-            android:background="@drawable/fuel_station"
-            app:cardBackgroundColor="@color/background_color"
-            app:cardCornerRadius="0dp"
-            app:cardElevation="0dp">
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/user1"
-                tools:srcCompat="@drawable/user1" />
-        </androidx.cardview.widget.CardView>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp">
-
-            <TextView
-                android:id="@+id/txt_enter_queue"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="@string/sign_up"
-                android:textSize="25sp"
-                android:textStyle="bold" />
-        </RelativeLayout>
+        android:layout_width="399dp"
+        android:layout_height="433dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="412dp"
             android:layout_margin="10dp"
-            app:cardBackgroundColor="@color/main_color2"
+            app:cardBackgroundColor="@color/material_on_background_disabled"
             app:cardCornerRadius="10dp">
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="363dp"
+                android:layout_height="382dp"
                 android:layout_margin="10dp"
                 android:orientation="vertical">
 
                 <EditText
                     android:id="@+id/edtTxt_fname"
                     android:layout_width="325dp"
-                    android:layout_height="35dp"
+                    android:layout_height="48dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="15dp"
-                    android:background="@drawable/input_field"
+                    android:background="@drawable/rounded_corner"
                     android:ems="10"
                     android:hint="@string/FullName"
                     android:inputType="textPersonName"
@@ -78,10 +47,10 @@
                 <EditText
                     android:id="@+id/edtTxt_username"
                     android:layout_width="325dp"
-                    android:layout_height="35dp"
+                    android:layout_height="48dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/input_field"
+                    android:background="@drawable/rounded_corner"
                     android:ems="10"
                     android:hint="@string/Username"
                     android:inputType="textPersonName"
@@ -92,10 +61,10 @@
                 <EditText
                     android:id="@+id/edtTxt_stationName"
                     android:layout_width="325dp"
-                    android:layout_height="35dp"
+                    android:layout_height="48dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/input_field"
+                    android:background="@drawable/rounded_corner"
                     android:ems="10"
                     android:hint="@string/StationName"
                     android:inputType="textPersonName"
@@ -106,10 +75,10 @@
                 <EditText
                     android:id="@+id/edtTxt_location"
                     android:layout_width="325dp"
-                    android:layout_height="35dp"
+                    android:layout_height="48dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/input_field"
+                    android:background="@drawable/rounded_corner"
                     android:ems="10"
                     android:hint="@string/Location"
                     android:inputType="textPersonName"
@@ -120,10 +89,10 @@
                 <EditText
                     android:id="@+id/edtTxt_password"
                     android:layout_width="325dp"
-                    android:layout_height="35dp"
+                    android:layout_height="48dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/input_field"
+                    android:background="@drawable/rounded_corner"
                     android:ems="10"
                     android:hint="@string/Password"
                     android:inputType="textPassword"
@@ -133,12 +102,12 @@
 
                 <EditText
                     android:id="@+id/edtTxt_confirmPassword"
-                    android:layout_width="325dp"
-                    android:layout_height="35dp"
+                    android:layout_width="329dp"
+                    android:layout_height="48dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="15dp"
-                    android:background="@drawable/input_field"
+                    android:background="@drawable/rounded_corner"
                     android:ems="10"
                     android:hint="@string/ConfirmPassword"
                     android:inputType="textPassword"
@@ -152,16 +121,39 @@
 
     <Button
         android:id="@+id/btn_register"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="143dp"
+        android:layout_height="67dp"
         android:text="@string/Register"
         android:textSize="18sp"
         app:backgroundTint="#00897B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-        app:layout_constraintVertical_bias="0.128" />
+        app:layout_constraintVertical_bias="0.387" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_enter_queue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Register"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

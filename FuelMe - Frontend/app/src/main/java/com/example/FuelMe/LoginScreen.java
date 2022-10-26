@@ -25,7 +25,7 @@ import com.example.FuelMe.database.DatabaseHelper;
 import com.example.FuelMe.database.InputValidatorHelper;
 import com.example.FuelMe.models.FuelStation;
 import com.example.FuelMe.models.User;
-import com.example.FuelMe.station_owner.StationOwnerDashboard;
+import com.example.FuelMe.station_owner.FuelStationOwnerDashboard;
 import com.example.FuelMe.vehicle_owner.SelectionStation;
 
 /**
@@ -168,7 +168,7 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
                                 for (FuelStation station : stations) {
                                     if (station.getId().equals(stationId)) {
                                         registeredFuelStation[0] = station;
-                                        Intent intent = new Intent(LoginScreen.this, StationOwnerDashboard.class);
+                                        Intent intent = new Intent(LoginScreen.this, FuelStationOwnerDashboard.class);
                                         intent.putExtra(Constants.STATION, registeredFuelStation[0]);
                                         startActivity(intent);
                                     }

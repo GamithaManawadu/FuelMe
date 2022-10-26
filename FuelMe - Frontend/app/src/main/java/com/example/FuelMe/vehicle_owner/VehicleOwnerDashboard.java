@@ -38,7 +38,7 @@ import com.example.FuelMe.models.FuelStation;
 import com.example.FuelMe.vehicle_owner.controllers.vehicleDashboardController;
 
 /**
- * The StationOwnerDashboard class facilitates the Vehicle Owner to see a dashboard view including all details of the Fuel Station
+ * The FuelStationOwnerDashboard class facilitates the Vehicle Owner to see a dashboard view including all details of the Fuel Station
  * (Queue Length, Fuel Status, WaitingTime Queue)
  */
 public class VehicleOwnerDashboard extends AppCompatActivity implements View.OnClickListener {

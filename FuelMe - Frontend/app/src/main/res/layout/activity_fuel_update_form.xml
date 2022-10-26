@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_color"
+    android:background="@color/input_color"
     tools:context=".station_owner.FuelUpdateForm">
 
     <LinearLayout
@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="15dp"
-            android:text="@string/update_form_label"
+            android:text="Update Fuel Details"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -26,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            app:cardBackgroundColor="#B6C8A1"
+            app:cardBackgroundColor="@color/cardview_shadow_start_color"
             app:cardCornerRadius="10dp">
 
             <LinearLayout
@@ -50,7 +50,7 @@
                     android:layout_height="35dp"
                     android:layout_gravity="center"
                     android:layout_marginBottom="20dp"
-                    android:background="@drawable/input_field"
+                    android:background="@drawable/rounded_corner"
                     android:ems="10"
                     android:inputType="number"
                     android:paddingLeft="10dp"
@@ -71,7 +71,7 @@
                     android:layout_height="35dp"
                     android:layout_gravity="center"
                     android:layout_marginBottom="20dp"
-                    android:background="@drawable/input_field"
+                    android:background="@drawable/rounded_corner"
                     android:drawableLeft="@drawable/ic_baseline_access_time_24"
                     android:drawablePadding="15dp"
                     android:ems="10"
@@ -96,7 +96,7 @@
                     android:layout_height="35dp"
                     android:layout_gravity="center"
                     android:layout_marginBottom="20dp"
-                    android:background="@drawable/input_field"
+                    android:background="@drawable/rounded_corner"
                     android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
                     android:drawablePadding="15dp"
                     android:ems="10"
@@ -121,7 +121,7 @@
                     android:layout_height="35dp"
                     android:layout_gravity="center"
                     android:layout_marginBottom="10dp"
-                    android:background="@drawable/input_field" />
+                    android:background="@drawable/rounded_corner" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -137,7 +137,7 @@
                 android:id="@+id/btn_cancel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#F44336"
+                android:background="@drawable/btn_drawable_selector1"
                 android:backgroundTint="@color/cancel_button"
                 android:text="@string/cancel_text"
                 android:textSize="16sp"
@@ -150,7 +150,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
                 android:layout_marginBottom="20dp"
-                android:background="#009688"
+                android:background="@drawable/btn_drawable_selector1"
                 android:backgroundTint="@color/submit_button"
                 android:text="@string/update_btn"
                 android:textSize="16sp"

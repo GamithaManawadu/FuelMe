@@ -56,7 +56,7 @@
     <string name="btn_fuel_arrival">Update Fuel Arrival</string>
     <string name="type">Type</string>
     <string name="current_status">Current Fuel Status</string>
-    <string name="sign_up">Sign Up</string>
+    <string name="sign_up">Log In</string>
     <string name="queue_enter">Entrance Form</string>
     <string name="get_started">Log In Now</string>
     <string-array name="fuel_types">

@@ -33,9 +33,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 /**
- * The StationOwnerDashboard class facilitates the Station Owner see a dashboard view for the Fuel Station including fuel status
+ * The FuelStationOwnerDashboard class facilitates the Station Owner see a dashboard view for the Fuel Station including fuel status
  */
-public class StationOwnerDashboard extends AppCompatActivity {
+public class FuelStationOwnerDashboard extends AppCompatActivity {
     private Button btn_update_fuel;
     private RadioGroup radioGroupPetrol, radioGroupDiesel;
     private RadioButton rbPetrol, rbPetrolAvailable, rbPetrolFinish;
@@ -71,9 +71,9 @@ public class StationOwnerDashboard extends AppCompatActivity {
         diesel = findViewById(R.id.txt_current_diesel);
 
         // Setting the currently available petrol and diesel amounts
-        petrol.setText(" Available Petrol Amount: " + loaded_fuel_station.getTotalPetrol() + " Liters");
+        petrol.setText("Petrol: " + loaded_fuel_station.getTotalPetrol() + "L");
         System.out.println("PETROLLLL" + loaded_fuel_station.getTotalPetrol());
-        diesel.setText(" Available Diesel Amount: " + loaded_fuel_station.getTotalDiesel() + "Liters");
+        diesel.setText("Diesel: " + loaded_fuel_station.getTotalDiesel() + "L");
 
         // Setting station name and location on the interface
         textView.setText(loaded_fuel_station.getStationName() + " - " + loaded_fuel_station.getLocation());
@@ -147,7 +147,7 @@ public class StationOwnerDashboard extends AppCompatActivity {
         btn_update_fuel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(StationOwnerDashboard.this, FuelUpdateForm.class);
+                Intent intent = new Intent(FuelStationOwnerDashboard.this, FuelUpdateForm.class);
                 intent.putExtra(Constants.STATION, loaded_fuel_station);
                 startActivity(intent);
             }
@@ -160,7 +160,7 @@ public class StationOwnerDashboard extends AppCompatActivity {
 
         //If user clicks on the back button
         if (id == android.R.id.home) {
-            Intent intent = new Intent(StationOwnerDashboard.this, MainActivity.class);
+            Intent intent = new Intent(FuelStationOwnerDashboard.this, MainActivity.class);
             startActivity(intent);
         }
         return true;
@@ -170,7 +170,7 @@ public class StationOwnerDashboard extends AppCompatActivity {
     private void showAlertDialog(String URL_to_send, String fuelType, String status) {
         RequestQueue requestQueue = Volley.newRequestQueue(this);
 
-        AlertDialog.Builder alertDialog = new AlertDialog.Builder(StationOwnerDashboard.this);
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(FuelStationOwnerDashboard.this);
         alertDialog.setTitle("Alert!");
         alertDialog.setMessage(
                         "" +
@@ -182,7 +182,7 @@ public class StationOwnerDashboard extends AppCompatActivity {
                 .setNegativeButton("No", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        Toast.makeText(StationOwnerDashboard.this, "Nothing changed", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(FuelStationOwnerDashboard.this, "Nothing changed", Toast.LENGTH_SHORT).show();
                         dialogInterface.dismiss();
                         finish();
                         startActivity(getIntent());
@@ -235,7 +235,7 @@ public class StationOwnerDashboard extends AppCompatActivity {
                             }
                         }
 
-                        Intent intent = new Intent(StationOwnerDashboard.this, StationOwnerDashboard.class);
+                        Intent intent = new Intent(FuelStationOwnerDashboard.this, FuelStationOwnerDashboard.class);
                         intent.putExtra(Constants.STATION, loaded_fuel_station);
                         startActivity(intent);
                     }

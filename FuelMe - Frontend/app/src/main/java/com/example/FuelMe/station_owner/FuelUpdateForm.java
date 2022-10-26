@@ -77,7 +77,7 @@ public class FuelUpdateForm extends AppCompatActivity implements AdapterView.OnI
         btn_cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(FuelUpdateForm.this, StationOwnerDashboard.class);
+                Intent intent = new Intent(FuelUpdateForm.this, FuelStationOwnerDashboard.class);
                 startActivity(intent);
             }
         });
@@ -235,7 +235,7 @@ public class FuelUpdateForm extends AppCompatActivity implements AdapterView.OnI
 
         // Back button navigation
         if (id == android.R.id.home) {
-            Intent intent = new Intent(FuelUpdateForm.this, StationOwnerDashboard.class);
+            Intent intent = new Intent(FuelUpdateForm.this, FuelStationOwnerDashboard.class);
             intent.putExtra(Constants.STATION, fuelStation);
             startActivity(intent);
         }
@@ -275,7 +275,7 @@ public class FuelUpdateForm extends AppCompatActivity implements AdapterView.OnI
                             updatedFuelStation = fuelStationUp;
 
                             // Navigation after database operation
-                            Intent intent = new Intent(FuelUpdateForm.this, StationOwnerDashboard.class);
+                            Intent intent = new Intent(FuelUpdateForm.this, FuelStationOwnerDashboard.class);
                             intent.putExtra(Constants.STATION, updatedFuelStation);
                             startActivity(intent);
                         } catch (JSONException e) {
