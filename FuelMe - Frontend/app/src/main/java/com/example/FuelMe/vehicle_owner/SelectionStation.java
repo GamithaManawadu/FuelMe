@@ -29,9 +29,7 @@ import com.example.FuelMe.models.User;
 import com.example.FuelMe.models.FuelStation;
 import com.example.FuelMe.constants.Constants;
 
-/**
- * The SelectionStation class is shown all the Fuel Stations in Listview and Give facility to  search them through Location
- */
+
 public class SelectionStation extends AppCompatActivity {
 
     private User loggedUser;
@@ -55,9 +53,9 @@ public class SelectionStation extends AppCompatActivity {
         loadStations();
     }
 
-    //Load the all fuel stations that are registered from the remote database via the api call
+
     private void loadStations() {
-        // Instantiate the RequestQueue.
+
         RequestQueue queue = Volley.newRequestQueue(this);
 
         // Request a string response from the provided URL.

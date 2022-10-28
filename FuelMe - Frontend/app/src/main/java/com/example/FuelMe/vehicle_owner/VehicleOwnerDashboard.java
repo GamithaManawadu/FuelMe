@@ -209,7 +209,7 @@ public class VehicleOwnerDashboard extends AppCompatActivity implements View.OnC
         mRequestQueue.add(jsonObjReq);
     }
 
-    //Set the count of each queues texts in the view according tot eh fuel type and vehicle type
+
     private void setQueueCountsInTexts(Map<String, Integer> vehicleCounts) {
 
         txtMotorBikeCountDiesel.setText(String.valueOf(vehicleCounts.get(Constants.MOTOR_BIKE + Constants.DIESEL)));

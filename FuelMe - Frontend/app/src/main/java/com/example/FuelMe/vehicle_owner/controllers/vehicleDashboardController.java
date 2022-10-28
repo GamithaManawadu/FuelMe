@@ -7,12 +7,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * The vehicleDashboardController class facilitates the control some functionalities that are executed in VehicleOwnerDashboard class
- */
+
 public class vehicleDashboardController {
 
-    //According to the selected station's queue details, this counts the number of vehicles in each queue according to the vehicle type and fuel type and return the counts
+
     public static Map<String, Integer> getVehicleCounts(ArrayList<Queue> joinedQueues) {
         int motorBikeDieselCount = 0, motorBikePetrolCount = 0;
         int vanDieselCount = 0, vanPetrolCount = 0;
@@ -23,7 +21,7 @@ public class vehicleDashboardController {
 
         for(Queue queue: joinedQueues){
 
-            /** MOTOR_BIKE Count **/
+            // MOTOR_BIKE Count
             if(queue.getFuelType().equals(Constants.DIESEL) && queue.getVehicleType().equals(Constants.MOTOR_BIKE)){
                 motorBikeDieselCount++;
             }
@@ -31,9 +29,9 @@ public class vehicleDashboardController {
             if(queue.getFuelType().equals(Constants.PETROL) && queue.getVehicleType().equals(Constants.MOTOR_BIKE)){
                 motorBikePetrolCount++;
             }
-            /** ******* **/
 
-            /** Van Count **/
+
+            // Van Count
             if(queue.getFuelType().equals(Constants.DIESEL) && queue.getVehicleType().equals(Constants.VAN)){
                 vanDieselCount++;
             }
@@ -41,9 +39,9 @@ public class vehicleDashboardController {
             if(queue.getFuelType().equals(Constants.PETROL) && queue.getVehicleType().equals(Constants.VAN)){
                 vanPetrolCount++;
             }
-            /** ******* **/
 
-            /** Three Wheel Count **/
+
+            //Three Wheel Count
             if(queue.getFuelType().equals(Constants.DIESEL) && queue.getVehicleType().equals(Constants.THREE_WHEEL)){
                 wheelDieselCount++;
             }
@@ -51,9 +49,9 @@ public class vehicleDashboardController {
             if(queue.getFuelType().equals(Constants.PETROL) && queue.getVehicleType().equals(Constants.VAN)){
                 wheelPetrolCount++;
             }
-            /** ****** **/
 
-            /** Car Count **/
+
+             //Car Count
             if(queue.getFuelType().equals(Constants.DIESEL) && queue.getVehicleType().equals(Constants.CAR)){
                 carDieselCount++;
             }
@@ -61,9 +59,9 @@ public class vehicleDashboardController {
             if(queue.getFuelType().equals(Constants.PETROL) && queue.getVehicleType().equals(Constants.CAR)){
                 carPetrolCount++;
             }
-            /** ****** **/
 
-            /** Bus/Lorry Count **/
+
+             //Bus Count
             if(queue.getFuelType().equals(Constants.DIESEL) && queue.getVehicleType().equals(Constants.BUS)){
                 busDieselCount++;
             }
@@ -71,7 +69,7 @@ public class vehicleDashboardController {
             if(queue.getFuelType().equals(Constants.PETROL) && queue.getVehicleType().equals(Constants.BUS)){
                 busPetrolCount++;
             }
-            /** ****** **/
+
         }
 
         totalDieselCount = busDieselCount+carDieselCount+wheelDieselCount+vanDieselCount+motorBikeDieselCount;

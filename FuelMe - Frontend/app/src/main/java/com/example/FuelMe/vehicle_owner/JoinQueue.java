@@ -39,10 +39,7 @@ import com.example.FuelMe.models.FuelStation;
 import com.example.FuelMe.constants.Constants;
 import com.example.FuelMe.vehicle_owner.controllers.vehicleDashboardController;
 
-/**
- * The JoinQueue class facilitates the vehicle owner to enter a queue in the selected station by filling the required details
- * in the form in this activity
- */
+
 public class JoinQueue extends AppCompatActivity implements AdapterView.OnItemSelectedListener, View.OnClickListener {
     private FuelStation selectedFuelStation = new FuelStation();
     private Spinner dropdownVehicleType, dropdownFuelType;
@@ -143,7 +140,7 @@ public class JoinQueue extends AppCompatActivity implements AdapterView.OnItemSe
         return true;
     }
 
-    //Vehicle Owner enrolled to the queue
+
     private void addQueueAPI(String vehicleType, String vehicleOwnerId, String stationId, String fuelType) {
         JSONObject jsonObject = new JSONObject();
         RequestQueue mRequestQueue = Volley.newRequestQueue(this);
@@ -203,7 +200,7 @@ public class JoinQueue extends AppCompatActivity implements AdapterView.OnItemSe
         mRequestQueue.add(jsonObjReq);
     }
 
-    // Get the selected station's object through the id via api call from remote database
+
     private void getFuelStationById(String id, String fuelType) {
 
         JSONObject jsonObject = new JSONObject();
@@ -240,10 +237,10 @@ public class JoinQueue extends AppCompatActivity implements AdapterView.OnItemSe
                             selectedFuelStation.setPetrolStatus(response.getBoolean("petrolStatus"));
                             selectedFuelStation.setQueues(joinedQueues);
 
-                            //Get the vehicle counts of each queue according ot the fuel type in the selected station
+
                             Map<String,Integer> vehicleCounts = vehicleDashboardController.getVehicleCounts(joinedQueues);
 
-                            //Get the total number of vehicles that can be in each queue of the selected station
+
                             getFuelStationCountById(id, vehicleCounts);
 
                         } catch (JSONException e) {
@@ -259,7 +256,7 @@ public class JoinQueue extends AppCompatActivity implements AdapterView.OnItemSe
         mRequestQueue.add(jsonObjReq);
     }
 
-    //Get the total number of vehicles that allocated in the selected fuel station
+
     private void getFuelStationCountById(String id, Map<String,Integer> vehicleCounts) {
 
         JSONArray jsonArray = new JSONArray();

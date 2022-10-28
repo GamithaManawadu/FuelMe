@@ -7,46 +7,34 @@
     android:background="@drawable/bg"
     tools:context=".vehicle_owner.VehicleOwnerDashboard">
 
-    <Button
-        android:id="@+id/btn_join"
-        android:layout_width="152dp"
-        android:layout_height="56dp"
-        android:text="@string/JoinQueue"
-        app:backgroundTint="#00897B"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.99" />
-
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
-        android:layout_width="381dp"
-        android:layout_height="280dp"
+        android:layout_width="347dp"
+        android:layout_height="240dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="60dp"
         android:layout_marginEnd="16dp"
         app:cardBackgroundColor="@color/background_color"
         app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7"
         tools:ignore="MissingConstraints">
 
         <RelativeLayout
-            android:layout_width="match_parent"
+            android:layout_width="345dp"
             android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="280dp"
+                android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:padding="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="13dp"
                     android:layout_weight="1"
                     android:orientation="horizontal"
                     android:paddingLeft="10dp">
@@ -72,8 +60,8 @@
 
                     <TextView
                         android:id="@+id/textView8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="@string/diesel"
                         android:textSize="18sp"
@@ -104,13 +92,13 @@
                         android:layout_weight="1"
                         android:paddingLeft="5dp"
                         android:paddingRight="10dp"
-                        android:text="40"
+                        android:text="50"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/txt_bikeCountDiesel"
-                        android:layout_width="120dp"
+                        android:layout_width="125dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_weight="1"
@@ -146,13 +134,13 @@
                         android:layout_weight="1"
                         android:paddingLeft="5dp"
                         android:paddingRight="10dp"
-                        android:text="40"
+                        android:text="60"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/txt_vanCountDiesel"
-                        android:layout_width="wrap_content"
+                        android:layout_width="50dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_weight="1"
@@ -194,7 +182,7 @@
 
                     <TextView
                         android:id="@+id/txt_3wheelCountDiesel"
-                        android:layout_width="wrap_content"
+                        android:layout_width="11dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_weight="1"
@@ -238,7 +226,7 @@
 
                     <TextView
                         android:id="@+id/txt_carCountDiesel"
-                        android:layout_width="wrap_content"
+                        android:layout_width="8dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:layout_marginBottom="10dp"
@@ -264,7 +252,7 @@
                         android:layout_marginBottom="10dp"
                         android:paddingLeft="5dp"
                         android:paddingRight="10dp"
-                        android:text="Bus/Lorry"
+                        android:text="Bus"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
@@ -312,6 +300,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints">
 
         <RelativeLayout
@@ -331,29 +320,32 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView3"
-        android:layout_width="386dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="16dp"
+        android:layout_width="359dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
         android:elevation="8dp"
         app:cardBackgroundColor="@color/input_color"
         app:cardCornerRadius="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
-        app:layout_constraintEnd_toEndOf="@+id/linearLayout7"
-        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView"
-        app:layout_constraintVertical_bias="0.84">
+        app:layout_constraintTop_toTopOf="parent">
 
         <RelativeLayout
-            android:layout_width="398dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
                 android:id="@+id/txt_fuelStatus"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="Fuel Status"
+                android:layout_width="226dp"
+                android:layout_height="41dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="67dp"
+                android:layout_marginEnd="66dp"
+                android:layout_marginBottom="7dp"
+                android:text="Fuel Availability"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textSize="22sp"
                 android:textStyle="bold" />
         </RelativeLayout>
@@ -361,14 +353,16 @@
 
     <LinearLayout
         android:id="@+id/linearLayout7"
-        android:layout_width="374dp"
-        android:layout_height="140dp"
-        android:layout_marginTop="290dp"
+        android:layout_width="371dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_join"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13999999">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -412,7 +406,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
-                        android:text="Available"
+                        android:text="Out Stock"
                         android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
@@ -420,8 +414,8 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
             android:orientation="horizontal">
 
@@ -460,7 +454,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
-                        android:text="Finished"
+                        android:text="On Stock"
                         android:textSize="20sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
@@ -472,17 +466,29 @@
         android:id="@+id/txt_timeDuration"
         android:layout_width="242dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="Time Duration of Queue : 1 hour"
+        android:text=" Queue Duration  : 2Hrs"
         android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/cardView3"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.89" />
+
+    <Button
+        android:id="@+id/btn_join"
+        android:layout_width="152dp"
+        android:layout_height="56dp"
+        android:text="@string/JoinQueue"
+        app:backgroundTint="#00897B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.989" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
