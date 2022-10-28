@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+
+    tools:context=".MenuActivity">
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout6"
+        android:layout_width="wrap_content"
+
+        android:layout_height="405dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="204dp"
+        android:layout_marginBottom="138dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/usercardid"
+            android:layout_width="159dp"
+            android:layout_height="162dp"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="122dp"
+
+                app:srcCompat="@drawable/user1"
+                android:contentDescription="TODO" />
+
+            <TextView
+                android:id="@+id/displayid"
+                android:layout_width="62dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="130dp"
+                android:fontFamily="@font/aclonica"
+                android:gravity="fill_vertical|end"
+                android:text="@string/User"
+                android:textColor="#090000"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="248dp"
+
+                app:srcCompat="@drawable/hfotter" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/addparkingcardview"
+            android:layout_width="158dp"
+            android:layout_height="171dp"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="104dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="125dp"
+                android:layout_marginEnd="100dp"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center"
+                android:text="@string/history"
+                android:textColor="#090000"
+                android:textSize="18sp" />
+
+
+
+            <ImageView
+                android:id="@+id/imageViewaddid"
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+
+                app:srcCompat="@drawable/his" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="196dp"
+        android:layout_height="408dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginBottom="137dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bookingcardid"
+            android:layout_width="163dp"
+            android:layout_height="161dp"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+
+                app:srcCompat="@drawable/stat" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="130dp"
+                android:fontFamily="@font/aclonica"
+                android:gravity="fill_vertical|end"
+                android:text="@string/Find"
+                android:textColor="#090000"
+                android:textSize="18sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/mapcardid"
+            android:layout_width="162dp"
+            android:layout_height="170dp"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="122dp"
+
+                app:srcCompat="@drawable/map" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="130dp"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center"
+                android:text="@string/Map"
+                android:textColor="#090000"
+                android:textSize="18sp" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="543dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/app_name"
+        android:textColor="#130000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="518dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/btn_drawable_selector4"
+        android:text="@string/logout"
+        android:textColor="#EADEDE"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.971" />
+
+
+</RelativeLayout>

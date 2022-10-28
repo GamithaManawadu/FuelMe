@@ -34,11 +34,14 @@
         <entry key="..\:/Users/Gamitha/OneDrive/Desktop/EAD/FuelQueueManagement-main/FuelQueManagement-Client/app/src/main/res/layout/single_station.xml" value="0.2223731884057971" />
         <entry key="..\:/studies/SLIIT/year 4/Sem 2/New folder/FuelMe - Frontend/app/src/main/res/drawable-v24/btn_drawable_selector1.xml" value="0.215" />
         <entry key="..\:/studies/SLIIT/year 4/Sem 2/New folder/FuelMe - Frontend/app/src/main/res/drawable-v24/rounded_corner.xml" value="0.215" />
+        <entry key="..\:/studies/SLIIT/year 4/Sem 2/New folder/FuelMe - Frontend/app/src/main/res/drawable/btn_drawable_selector4.xml" value="0.1885" />
         <entry key="..\:/studies/SLIIT/year 4/Sem 2/New folder/FuelMe - Frontend/app/src/main/res/layout/activity_exit_queue.xml" value="0.20606884057971014" />
         <entry key="..\:/studies/SLIIT/year 4/Sem 2/New folder/FuelMe - Frontend/app/src/main/res/layout/activity_fuel_update_form.xml" value="0.22192028985507245" />
         <entry key="..\:/studies/SLIIT/year 4/Sem 2/New folder/FuelMe - Frontend/app/src/main/res/layout/activity_join_queue.xml" value="0.264" />
         <entry key="..\:/studies/SLIIT/year 4/Sem 2/New folder/FuelMe - Frontend/app/src/main/res/layout/activity_login_screen.xml" value="0.25" />
         <entry key="..\:/studies/SLIIT/year 4/Sem 2/New folder/FuelMe - Frontend/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/studies/SLIIT/year 4/Sem 2/New folder/FuelMe - Frontend/app/src/main/res/layout/activity_map_navigate.xml" value="0.18020833333333333" />
+        <entry key="..\:/studies/SLIIT/year 4/Sem 2/New folder/FuelMe - Frontend/app/src/main/res/layout/activity_menu.xml" value="0.24094202898550723" />
         <entry key="..\:/studies/SLIIT/year 4/Sem 2/New folder/FuelMe - Frontend/app/src/main/res/layout/activity_registration.xml" value="0.25" />
         <entry key="..\:/studies/SLIIT/year 4/Sem 2/New folder/FuelMe - Frontend/app/src/main/res/layout/activity_regsitration_vehicle_owner.xml" value="0.20606884057971014" />
         <entry key="..\:/studies/SLIIT/year 4/Sem 2/New folder/FuelMe - Frontend/app/src/main/res/layout/activity_selection_station.xml" value="0.20606884057971014" />

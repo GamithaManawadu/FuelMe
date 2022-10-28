@@ -51,7 +51,7 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
                 if (allowSave) {
                     user = databaseHelper.loginValidate(edUserName.getText().toString(), edPassword.getText().toString());
                     if (user == null) {
-                        Toast.makeText(LoginScreen.this, "Invalid Credentials, Please try again", Toast.LENGTH_LONG).show();
+                        Toast.makeText(LoginScreen.this, "Invalid Username Password", Toast.LENGTH_LONG).show();
                     } else {
                         Toast.makeText(LoginScreen.this, "Successfully Logged", Toast.LENGTH_LONG).show();
                         if (user.getRole().equals(Constants.VEHICLE)) {

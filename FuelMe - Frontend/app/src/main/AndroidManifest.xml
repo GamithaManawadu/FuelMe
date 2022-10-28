@@ -15,7 +15,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FuelMe">
         <activity
-            android:name="com.example.FuelMe.WelcomeActivity"
+            android:name=".MapNavigate"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomeActivity"
             android:exported="true"
             android:theme="@style/Theme.FuelMe.NoActionBar">
             <intent-filter>
@@ -25,35 +31,32 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.FuelMe.vehicle_owner.SelectionStation"
+            android:name=".vehicle_owner.SelectionStation"
             android:exported="true" />
         <activity
-            android:name="com.example.FuelMe.vehicle_owner.ExitQueue"
+            android:name=".vehicle_owner.ExitQueue"
             android:exported="true" />
         <activity
-            android:name="com.example.FuelMe.vehicle_owner.JoinQueue"
+            android:name=".vehicle_owner.JoinQueue"
             android:exported="true" />
         <activity
-            android:name="com.example.FuelMe.LoginScreen"
+            android:name=".LoginScreen"
             android:exported="true" />
         <activity
-            android:name="com.example.FuelMe.Registration"
+            android:name=".Registration"
             android:exported="true" />
         <activity
-            android:name="com.example.FuelMe.station_owner.FuelUpdateForm"
+            android:name=".station_owner.FuelUpdateForm"
             android:exported="false" />
         <activity
-            android:name="com.example.FuelMe.vehicle_owner.VehicleOwnerDashboard"
+            android:name=".vehicle_owner.VehicleOwnerDashboard"
             android:exported="true" />
         <activity
-            android:name="com.example.FuelMe.station_owner.FuelStationOwnerDashboard"
-            android:exported="true"
-            />
+            android:name=".station_owner.FuelStationOwnerDashboard"
+            android:exported="true" />
         <activity
-            android:name="com.example.FuelMe.MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:name=".MainActivity"
+            android:exported="true" />
 
         <meta-data
             android:name="preloaded_fonts"
