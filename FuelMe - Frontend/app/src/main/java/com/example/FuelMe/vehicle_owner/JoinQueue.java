@@ -149,7 +149,7 @@ public class JoinQueue extends AppCompatActivity implements AdapterView.OnItemSe
 
         try {
 
-            jsonObject.put("id", null);
+
             jsonObject.put("vehicleType", vehicleType);
             jsonObject.put("vehicleOwner", vehicleOwnerId);
             jsonObject.put("stationsId", stationId);
