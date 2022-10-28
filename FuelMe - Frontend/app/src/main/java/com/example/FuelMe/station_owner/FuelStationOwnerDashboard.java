@@ -49,7 +49,7 @@ public class FuelStationOwnerDashboard extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // App Bar
+
         setContentView(R.layout.activity_station_owner_dashboard);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("Station Owner Dashboard");
@@ -70,12 +70,12 @@ public class FuelStationOwnerDashboard extends AppCompatActivity {
         petrol = findViewById(R.id.txt_current_petrol);
         diesel = findViewById(R.id.txt_current_diesel);
 
-        // Setting the currently available petrol and diesel amounts
-        petrol.setText("Petrol: " + loaded_fuel_station.getTotalPetrol() + "L");
+        // Setting the current available petrol and diesel amounts
+        petrol.setText(loaded_fuel_station.getTotalPetrol() + "L");
         System.out.println("PETROLLLL" + loaded_fuel_station.getTotalPetrol());
-        diesel.setText("Diesel: " + loaded_fuel_station.getTotalDiesel() + "L");
+        diesel.setText(loaded_fuel_station.getTotalDiesel() + "L");
 
-        // Setting station name and location on the interface
+
         textView.setText(loaded_fuel_station.getStationName() + " - " + loaded_fuel_station.getLocation());
 
         status_petrol = loaded_fuel_station.isPetrolStatus();
@@ -95,7 +95,7 @@ public class FuelStationOwnerDashboard extends AppCompatActivity {
             rbPetrolAvailable.setChecked(true);
         }
 
-        // Onclick function for Petrol Status Radio Button
+
         radioGroupPetrol.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
@@ -247,14 +247,14 @@ public class FuelStationOwnerDashboard extends AppCompatActivity {
         alert.show();
     }
 
-    // find and retrieve the object of the fuel station which is owned by the logged station owner
+
     public FuelStation findFuelStationById(String stationId) {
-        // Instantiate the RequestQueue.
+
         RequestQueue queue = Volley.newRequestQueue(this);
         String url = Constants.BASE_URL + "/FuelStation/";
         String get_url = url.concat(stationId);
 
-        // Request a string response from the provided URL.
+
         StringRequest stringRequest = new StringRequest(Request.Method.GET, get_url,
                 new Response.Listener<String>() {
                     @Override
@@ -285,7 +285,7 @@ public class FuelStationOwnerDashboard extends AppCompatActivity {
                         System.out.println("That didn't work! +" + error.getLocalizedMessage());
                     }
                 });
-        // Add the request to the RequestQueue.
+
         queue.add(stringRequest);
         return fuelStation;
     }

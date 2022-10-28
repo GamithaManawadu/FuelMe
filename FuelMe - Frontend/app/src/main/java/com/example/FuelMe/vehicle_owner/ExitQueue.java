@@ -23,10 +23,7 @@ import com.example.FuelMe.models.FuelStation;
 import com.example.FuelMe.models.Queue;
 import com.example.FuelMe.models.User;
 
-/**
- * The ExitQueue class facilitates the vehicle owner to exit from the entered queue in the selected station by indicating
- * whether exit before or after pump fuel
- */
+
 public class ExitQueue extends AppCompatActivity implements View.OnClickListener {
     private Button btnExitAfter, btnExitBefore;
     private FuelStation fuelStation;
@@ -61,13 +58,13 @@ public class ExitQueue extends AppCompatActivity implements View.OnClickListener
         btnExitBefore.setOnClickListener(this);
 
         txtJoinedTime = findViewById(R.id.txt_joinedTime);
-        txtJoinedTime.setText("You have joined to the queue at " + joinedTime);
+        txtJoinedTime.setText("joined  at " + joinedTime);
     }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
-        //If user clicks on the back button
+
         if(id == android.R.id.home){
             Intent intent = new Intent(ExitQueue.this, JoinQueue.class);
             intent.putExtra(Constants.STATION, fuelStation);
@@ -82,11 +79,11 @@ public class ExitQueue extends AppCompatActivity implements View.OnClickListener
         switch (view.getId()) {
             case R.id.btn_exitAfter:
                 exitQueueApi(true);
-                Toast.makeText(this, "You have Exited from the Queue After the pump fuel", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, " Exited from the Queue After the pump fuel", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btn_exitBefore:
                 exitQueueApi(false);
-                Toast.makeText(this, "You have Exited from the Queue Before the pump fuel", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Exited from the Queue Before the pump fuel", Toast.LENGTH_SHORT).show();
                 break;
             default:
                 break;
@@ -98,7 +95,7 @@ public class ExitQueue extends AppCompatActivity implements View.OnClickListener
         startActivity(i);
     }
 
-    //When user clicks on exitFromQueue button, this updates the relevant fuel station with removed queue details
+
     private void exitQueueApi(Boolean aquired) {
         // Instantiate the RequestQueue.
         RequestQueue queue = Volley.newRequestQueue(this);
@@ -121,7 +118,7 @@ public class ExitQueue extends AppCompatActivity implements View.OnClickListener
                     }
                 });
 
-        // Add the request to the RequestQueue.
+
         queue.add(stringRequest);
     }
 

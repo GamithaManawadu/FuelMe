@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_color"
+    android:background="@drawable/bg4"
     android:orientation="vertical"
     tools:context=".vehicle_owner.SelectionStation">
 
@@ -13,8 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableRight="@android:drawable/ic_menu_search"
-        android:paddingLeft="10dp"
-        android:hint="Search Fuel Station by location" />
+        android:hint="Search Fuel Station "
+        android:paddingLeft="10dp" />
 
     <ListView
         android:id="@+id/idStationView"

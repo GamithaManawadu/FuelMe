@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">FuelMe</string>
     <string name="title_activity_main123">MainActivity123</string>
-    <!-- Strings used for fragments for navigation -->
+
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
@@ -42,20 +42,20 @@
     </string-array>
     <string name="btn_update_fuel_status">Update Fuel Status</string>
     <string name="update_form_label">Fuel Update Form</string>
-    <string name="fuel_amount_field">Fuel Amount in Liters</string>
-    <string name="arrival_time_field">Arrival Time</string>
-    <string name="arrival_date_field">Arrival Date</string>
+    <string name="fuel_amount_field">Fuel Amount -L </string>
+    <string name="arrival_time_field">Time</string>
+    <string name="arrival_date_field">Date</string>
     <string name="update_btn">Update</string>
     <string name="cancel_text">Cancel</string>
     <string name="finish_time_field">Finish Time</string>
     <string name="petrol">Petrol</string>
     <string name="diesel">Diesel</string>
-    <string name="available">Available</string>
-    <string name="finish">Finish</string>
-    <string name="fuel_type">Fuel Type</string>
-    <string name="btn_fuel_arrival">Update Fuel Arrival</string>
+    <string name="available">On Stock</string>
+    <string name="finish">Out Stock</string>
+    <string name="fuel_type">Type</string>
+    <string name="btn_fuel_arrival">Update Fuel Status</string>
     <string name="type">Type</string>
-    <string name="current_status">Current Fuel Status</string>
+    <string name="current_status">Fuel Status</string>
     <string name="sign_up">Log In</string>
     <string name="queue_enter">Entrance Form</string>
     <string name="get_started">Log In Now</string>

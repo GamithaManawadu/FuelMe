@@ -15,10 +15,7 @@ import com.example.FuelMe.constants.Constants;
 import com.example.FuelMe.models.FuelStation;
 import com.example.FuelMe.models.User;
 
-/**
- * The StationAdapter class is used for shown Fuel Stations objects in the list view in
- * the SelectStation Activity
- */
+
 public class StationAdapter extends ArrayAdapter<FuelStation>{
 
     private int resource;
