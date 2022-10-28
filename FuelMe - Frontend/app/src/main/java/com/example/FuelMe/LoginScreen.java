@@ -93,20 +93,20 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
     private void showAlertDialog() {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(LoginScreen.this);
         alertDialog.setTitle("Register As ");
-        String[] items = {"Vehicle Owner", "Station Owner"};
+        String[] items = {"Driver", "Fuel Station Owner"};
         int checkedItem = 1;
         alertDialog.setSingleChoiceItems(items, checkedItem, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 switch (which) {
                     case 0:
-                        Toast.makeText(LoginScreen.this, "You are going to register as a Vehicle Owner", Toast.LENGTH_LONG).show();
+                        Toast.makeText(LoginScreen.this, "Registering as a Vehicle Owner", Toast.LENGTH_LONG).show();
                         Intent intentVehicle = new Intent(LoginScreen.this, Registration.class);
                         intentVehicle.putExtra(Constants.ROLE, Constants.VEHICLE);
                         startActivity(intentVehicle);
                         break;
                     case 1:
-                        Toast.makeText(LoginScreen.this, "You are going to register as a Station Owner", Toast.LENGTH_LONG).show();
+                        Toast.makeText(LoginScreen.this, "Registering as a Station Owner", Toast.LENGTH_LONG).show();
                         Intent intentStation = new Intent(LoginScreen.this, Registration.class);
                         intentStation.putExtra(Constants.ROLE, Constants.STATION);
                         startActivity(intentStation);

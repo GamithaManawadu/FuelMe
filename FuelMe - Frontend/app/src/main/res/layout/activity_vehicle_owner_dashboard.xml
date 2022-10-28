@@ -294,8 +294,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:elevation="8dp"
-        app:cardBackgroundColor="@color/input_color"
-        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="?attr/scrimBackground"
         app:layout_constraintBottom_toTopOf="@+id/cardView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -313,6 +312,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:text="Queue Status"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textSize="22sp"
                 android:textStyle="bold" />
         </RelativeLayout>
@@ -324,8 +324,7 @@
         android:layout_height="55dp"
         android:layout_marginTop="5dp"
         android:elevation="8dp"
-        app:cardBackgroundColor="@color/input_color"
-        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/cardview_shadow_end_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -336,14 +335,14 @@
 
             <TextView
                 android:id="@+id/txt_fuelStatus"
-                android:layout_width="226dp"
-                android:layout_height="41dp"
+                android:layout_width="163dp"
+                android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="67dp"
-                android:layout_marginEnd="66dp"
-                android:layout_marginBottom="7dp"
+                android:layout_marginStart="102dp"
+                android:layout_marginEnd="94dp"
+                android:layout_marginBottom="16dp"
                 android:text="Fuel Availability"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textSize="22sp"
@@ -373,7 +372,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="187dp"
                 android:layout_height="50dp"
-                app:cardBackgroundColor="@color/btn_color1">
+                app:cardBackgroundColor="@color/white">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -385,8 +384,8 @@
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
                         android:text="Petrol"
-                        android:textSize="25sp"
-                        android:textStyle="bold" />
+                        android:textSize="24sp"
+                        app:fontFamily="sans-serif-smallcaps" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -422,7 +421,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="187dp"
                 android:layout_height="50dp"
-                app:cardBackgroundColor="@color/main_color1">
+                app:cardBackgroundColor="@color/white">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -434,8 +433,8 @@
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
                         android:text="Diesel"
-                        android:textSize="25sp"
-                        android:textStyle="bold" />
+                        android:textSize="24sp"
+                        app:fontFamily="sans-serif-smallcaps" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 

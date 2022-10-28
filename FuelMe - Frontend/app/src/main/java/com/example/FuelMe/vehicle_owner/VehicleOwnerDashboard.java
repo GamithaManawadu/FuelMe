@@ -37,10 +37,7 @@ import com.example.FuelMe.constants.Constants;
 import com.example.FuelMe.models.FuelStation;
 import com.example.FuelMe.vehicle_owner.controllers.vehicleDashboardController;
 
-/**
- * The FuelStationOwnerDashboard class facilitates the Vehicle Owner to see a dashboard view including all details of the Fuel Station
- * (Queue Length, Fuel Status, WaitingTime Queue)
- */
+
 public class VehicleOwnerDashboard extends AppCompatActivity implements View.OnClickListener {
 
     private User loggedUser;
@@ -80,7 +77,7 @@ public class VehicleOwnerDashboard extends AppCompatActivity implements View.OnC
         setContentView(R.layout.activity_vehicle_owner_dashboard);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
-        // To retrieve object in second Activity
+
         fuelStation = (FuelStation) getIntent().getSerializableExtra(Constants.STATION);
         loggedUser = (User) getIntent().getSerializableExtra(Constants.LOGGED_USER);
 
@@ -114,17 +111,17 @@ public class VehicleOwnerDashboard extends AppCompatActivity implements View.OnC
 
         txtTimeDuration = findViewById(R.id.txt_timeDuration);
 
-        //Set the fuel status in the dashboard whether available or not
+
         setFuelStatsInView();
 
-        //Get the total waiting time in the queue of the station
+
         getQueueTimeDuration(fuelStation.getId(), new VolleyCallback() {
                     @Override
                     public void onSuccess(String result) {
                         if (result == "0") {
-                            txtTimeDuration.setText("No Queues! Better to Join");
+                            txtTimeDuration.setText("No Queue");
                         } else {
-                            txtTimeDuration.setText("People are waiting at queue from " + result);
+                            txtTimeDuration.setText("Waiting Time" + result);
                         }
                     }
 
@@ -135,26 +132,26 @@ public class VehicleOwnerDashboard extends AppCompatActivity implements View.OnC
         );
     }
 
-    //Change the state of the fuel ( Available / Finish ) in the view according to the selected station's details
+
     private void setFuelStatsInView() {
         if (fuelStation.getTotalDiesel() != 0) {
-            txtDieselStatus.setText("Available");
+            txtDieselStatus.setText("On Stock");
             cardDieselStatus.setCardBackgroundColor(Color.parseColor("#ff99cc00"));
         } else {
-            txtDieselStatus.setText("Finished");
+            txtDieselStatus.setText("Out of Stock");
             cardDieselStatus.setCardBackgroundColor(Color.parseColor("#ffff4444"));
         }
 
         if (fuelStation.getTotalPetrol() != 0) {
-            txtPetrolStatus.setText("Available");
+            txtPetrolStatus.setText("On Stock");
             cardPetrolStatus.setCardBackgroundColor(Color.parseColor("#ff99cc00"));
         } else {
-            txtPetrolStatus.setText("Finished");
+            txtPetrolStatus.setText("Out of Stock");
             cardPetrolStatus.setCardBackgroundColor(Color.parseColor("#ffff4444"));
         }
     }
 
-    // Get the selected station's object through the id via api call from remote database
+
     private void getFuelStationById(String id) {
 
         JSONObject jsonObject = new JSONObject();
@@ -191,9 +188,9 @@ public class VehicleOwnerDashboard extends AppCompatActivity implements View.OnC
                             selectedFuelStation.setPetrolStatus(response.getBoolean("petrolStatus"));
                             selectedFuelStation.setQueues(joinedQueues);
 
-                            //Get the number of vehicles in each queue(Petrol or Diesel)
+
                             Map<String, Integer> vehicleCounts = vehicleDashboardController.getVehicleCounts(joinedQueues);
-                            //Set the counts of each vehicles in the dashboard text views
+
                             setQueueCountsInTexts(vehicleCounts);
 
                         } catch (JSONException e) {
@@ -234,7 +231,7 @@ public class VehicleOwnerDashboard extends AppCompatActivity implements View.OnC
 
         int id = item.getItemId();
 
-        //If user clicks on the back button
+
         if (id == android.R.id.home) {
             Intent intent = new Intent(VehicleOwnerDashboard.this, SelectionStation.class);
             startActivity(intent);
@@ -242,14 +239,14 @@ public class VehicleOwnerDashboard extends AppCompatActivity implements View.OnC
         return true;
     }
 
-    // Get the total time duration of long people are waiting at the queue in the station
+
     public void getQueueTimeDuration(String stationId, final VolleyCallback callback) {
 
-        // Instantiate the RequestQueue.
+
         RequestQueue queue = Volley.newRequestQueue(this);
         String api = Constants.BASE_URL + "/Queue/GetQueueTime?stationId=" + stationId;
 
-        // Request a string response from the provided URL.
+
         StringRequest stringRequest = new StringRequest(Request.Method.GET, api,
                 new Response.Listener<String>() {
                     @Override
@@ -269,7 +266,7 @@ public class VehicleOwnerDashboard extends AppCompatActivity implements View.OnC
                         System.out.println("That didn't work! +" + error.getLocalizedMessage());
                     }
                 });
-        // Add the request to the RequestQueue.
+
         queue.add(stringRequest);
     }
 

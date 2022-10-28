@@ -32,6 +32,9 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.FuelMe.LoginScreen;
+import com.example.FuelMe.MainActivity;
+import com.example.FuelMe.MapNavigate;
 import com.example.FuelMe.R;
 import com.example.FuelMe.models.User;
 import com.example.FuelMe.models.Queue;
@@ -46,10 +49,12 @@ public class JoinQueue extends AppCompatActivity implements AdapterView.OnItemSe
     private String timeDuration = "0";
     private TextView txtTimeDuration;
     private FuelStation fuelStation;
-    private Button btnConfirmJoin;
+    private Button btnConfirmJoin, direction;
     private User loggedUser;
     private String fuelType;
     private String vehicle;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -101,8 +106,18 @@ public class JoinQueue extends AppCompatActivity implements AdapterView.OnItemSe
         btnConfirmJoin = findViewById(R.id.btn_confirmJoin);
         btnConfirmJoin.setOnClickListener(this);
 
+        direction = findViewById(R.id.btn_confirmJoin2);
+
+        direction.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(JoinQueue.this, MapNavigate.class);
+                startActivity(intent);
+            }
+        });
+
         txtTimeDuration = findViewById(R.id.txt_timeDurationJoin);
-        txtTimeDuration.setText("People are waiting from " + timeDuration);
+        txtTimeDuration.setText("Waiting Time " + timeDuration);
     }
 
     public void onItemSelected(AdapterView<?> parent, View view,

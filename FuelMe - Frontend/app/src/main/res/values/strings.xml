@@ -63,7 +63,7 @@
     <string name="type">Type</string>
     <string name="current_status">Fuel Status</string>
     <string name="sign_up">Log In</string>
-    <string name="queue_enter">Entrance Form</string>
+    <string name="queue_enter">Enter to the Queue</string>
     <string name="get_started">Log In Now</string>
     <string-array name="fuel_types">
         <item>Petrol</item>

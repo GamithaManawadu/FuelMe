@@ -24,10 +24,13 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.HttpHeaderParser;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.FuelMe.LoginScreen;
 import com.example.FuelMe.MainActivity;
+import com.example.FuelMe.MapNavigate;
 import com.example.FuelMe.R;
 import com.example.FuelMe.constants.Constants;
 import com.example.FuelMe.models.FuelStation;
+import com.example.FuelMe.vehicle_owner.JoinQueue;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -36,7 +39,7 @@ import org.json.JSONObject;
  * The FuelStationOwnerDashboard class facilitates the Station Owner see a dashboard view for the Fuel Station including fuel status
  */
 public class FuelStationOwnerDashboard extends AppCompatActivity {
-    private Button btn_update_fuel;
+    private Button btn_update_fuel,logout;
     private RadioGroup radioGroupPetrol, radioGroupDiesel;
     private RadioButton rbPetrol, rbPetrolAvailable, rbPetrolFinish;
     private RadioButton rbDiesel, rbDieselAvailable, rbDieselFinish;
@@ -152,6 +155,9 @@ public class FuelStationOwnerDashboard extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+
     }
 
     @Override
